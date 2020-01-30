@@ -1,0 +1,48 @@
+@import '../../static/assets/styles/_resources.scss';
+
+.header {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: block;
+    padding-top: 40px;
+
+    &__container {
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        max-width: 1160px;
+        margin: 20px auto;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+
+        &_list {
+            li {
+                display: inline-block;
+                margin: 0 10px;
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px 40px;
+        border-bottom:2px solid transparent;
+        transition: all .2s ease;
+
+        &:hover {
+            border-bottom: 2px solid $main_color3;
+        }
+    }
+
+
+
+}
