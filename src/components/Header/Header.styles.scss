@@ -7,16 +7,25 @@
     right: 0;
     left: 0;
     display: block;
-    padding-top: 40px;
+    padding-top: 15px;
 
     &__container {
         position: relative;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
-        max-width: 1160px;
-        margin: 20px auto;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    &__logo {
+        background: url("../../static/images/logo-gray.png") no-repeat;
+        background-size: contain;
+        height: 41px;
+        width: 203px;
+        margin-top: 10px;
     }
 
     &__menu {
@@ -24,6 +33,9 @@
         flex-direction: row;
 
         &_list {
+            padding-left: 125px;
+            height: 25px;
+
             li {
                 display: inline-block;
                 margin: 0 10px;
@@ -34,15 +46,36 @@
     &__link {
         display: flex;
         flex-direction: column;
-        padding: 0 10px 40px;
+        padding: 0 15px;
         border-bottom:2px solid transparent;
         transition: all .2s ease;
+        font-weight: bold;
 
         &:hover {
-            border-bottom: 2px solid $main_color3;
+            text-decoration: none;
+            //border-bottom: 2px solid $main_color3;
+
+            &::after {
+                content: "";
+                width: 4px;
+                background-color: #FFFFFF;
+                height: 4px;
+                border-radius: 5px;
+                text-align: center;
+                margin: 0 auto;
+            }
         }
     }
 
-
-
+    &__button {
+        padding: 18px 34px;
+        border-radius: 50px;
+        outline: none;
+        border: 2px solid #5489c3;
+        background-color: transparent;
+        color: #fdfffc;
+        font-family: 'CeraRoundPro', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+    }
 }

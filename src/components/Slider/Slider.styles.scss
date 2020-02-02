@@ -1,6 +1,7 @@
 @import '../../static/assets/styles/_resources.scss';
 
 .slider {
+    border-radius: 0 0 50% 50% / 0 0 85px 85px;
     background-color: $main_color2;
     //max-width: 1160px;
     margin: 0 auto;

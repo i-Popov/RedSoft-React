@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    font-family: 'CeraRoundPro-Medium', Arial, sans-serif;
+    font-family: 'CeraRoundPro', sans-serif;
     font-size: $sp_base_font_size;
     background-color: $main_color;
     line-height: $sp_base_line_height;
@@ -75,7 +75,8 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'CeraRoundPro-Medium', Arial, sans-serif;
+    font-family: 'CeraRoundPro', sans-serif;
+    font-weight: 500;
     color: $text_color2;
 }
 

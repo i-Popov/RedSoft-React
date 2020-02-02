@@ -4,7 +4,7 @@ import styles from './Header.styles.scss';
 const Header = () => (
     <header className={styles.header}>
         <div className={styles.header__container}>
-            <a href="/#">Logo</a>
+            <a href="/#" className={styles.header__logo} title="logo"> </a>
             <nav className={styles.header__menu}>
                 <ul className={styles.header__menu_list}>
                     <li>
@@ -21,7 +21,7 @@ const Header = () => (
                     </li>
                 </ul>
             </nav>
-            <button className={styles}>Оставить заявку</button>
+            <button className={styles.header__button}>Оставить заявку</button>
         </div>
     </header>
 );
