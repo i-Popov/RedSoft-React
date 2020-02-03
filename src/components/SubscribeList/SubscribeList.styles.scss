@@ -1,0 +1,53 @@
+@import '../../static/assets/styles/_resources.scss';
+
+.sublist {
+    background: linear-gradient(180deg, rgba(14, 114, 183, 0.1), rgba(40, 43, 100, 0.1));
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: $text_color2;
+    position: relative;
+    //height: 600px;
+
+    &__wrapper {
+        //display: flex;
+        max-width: 1200px;
+        padding: 110px 20px 200px;
+        position: relative;
+        text-align: center;
+
+        h2 {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__form {
+        display: flex; // ??
+        justify-content: center; // ??
+        padding-top: 22px;
+        align-items: center; // ??
+    }
+
+    &__input {
+        padding: 20px 95px;
+        border-radius: 50px;
+        margin-right: 50px;
+    }
+
+    &__button {
+        background-color: $button_color;
+        padding: 20px 36px;
+        border-radius: 50px;
+        outline: none;
+        border: transparent;
+        color: #fdfffc;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 8px 0;
+        z-index: 1;
+    }
+
+
+}

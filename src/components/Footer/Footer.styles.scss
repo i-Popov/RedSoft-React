@@ -1,0 +1,21 @@
+@import '../../static/assets/styles/_resources.scss';
+
+.footer {
+    background: $footer_color;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: $text_color2;
+    position: relative;
+    height: 300px;
+
+    &__wrapper {
+        display: flex;
+        max-width: 1200px;
+        padding: 60px 0 170px;
+        position: relative;
+    }
+
+
+}
