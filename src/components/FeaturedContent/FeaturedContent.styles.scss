@@ -1,15 +1,95 @@
 @import '../../static/assets/styles/_resources.scss';
 
 .ftcontent {
-
-    //border-radius: 0 0 50% 50% / 0 0 85px 85px;
-    background-color: $main_color;
-    //max-width: 1160px;
+    //background-color: $main_color;
+    //background-image: url("../../static/images/lines.svg");
+    //background-position: -1935px -905px;
+    //background-repeat: no-repeat;
+    height: 880px;
     margin: 0 auto;
     width: 100%;
-    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    overflow: hidden;
+    color: $text_color2;
+    position: relative;
+    //max-width: 1200px;
+    //padding: 0 20px;
+
+
+    &__wrapper {
+        display: flex;
+        max-width: 970px;
+        padding-top: 70px;
+
+        //position: relative;
+    }
+
+    &__lines {
+        position: absolute;
+        z-index: 0;
+        top: -869px;
+        right: 962px;
+    }
+
+    &__phone {
+        padding-left: 30px;
+        z-index: 1;
+
+    }
+
+    &__text {
+        padding-top: 60px;
+        padding-left: 40px;
+        z-index: 1;
+
+        ul {
+            padding-left: 0;
+        }
+
+        li {
+            padding-bottom: 15px;
+            list-style-type: none;
+            display: inline-flex;
+
+            &:before {
+                content: '•';
+                width: 2px;
+                height: 2px;
+                margin-right: 15px;
+                color: #16afe0;
+            }
+        }
+
+        h2 {
+            margin: 20px 0;
+        }
+
+    }
+
+    &__button {
+        background-color: $button_color;
+        padding: 20px 34px;
+        border-radius: 50px;
+        outline: none;
+        border: transparent;
+        color: #fdfffc;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 8px 0;
+        z-index: 1;
+    }
+
+    &__pulse {
+        position: absolute;
+        z-index: 0;
+        top: 565px;
+        right: 85px;
+
+        //top: 490px;
+        //left: 860px;
+    }
+
 }

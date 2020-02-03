@@ -74,8 +74,13 @@
         border: 2px solid #5489c3;
         background-color: transparent;
         color: #fdfffc;
-        font-family: 'CeraRoundPro', sans-serif;
         font-size: 16px;
         font-weight: bold;
+        cursor: pointer;
+        //font-family: CeraRoundPro, sans-serif;
+
+        &:hover {
+            box-shadow: 0 0 6px 0 #00000040;
+        }
     }
 }

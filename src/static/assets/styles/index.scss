@@ -48,6 +48,7 @@ a {
 a,
 button {
     outline: none;
+    font-family: 'CeraRoundPro', sans-serif;
 }
 
 a,
@@ -56,7 +57,7 @@ li,
 td {
     font-size: $sp_base_font_size;
     line-height: $sp_base_line_height;
-    font-weight: normal;
+    font-weight: 500;
     letter-spacing: $sp_base_letter_spacing;
 
     @media (min-width: $tb_bp) {
@@ -95,8 +96,8 @@ h1 {
 }
 
 h2 {
-    font-size: $dt_header2_font_size;
-    line-height: $dt_header2_line_height;
+    font-size: $dt_header1_font_size;
+    line-height: $dt_header1_line_height;
 
     //@media (min-width: $sp_bp) {
     //    font-size: $tb_header2_font_size;
@@ -108,19 +109,19 @@ h2 {
     //}
 }
 
-//h3 {
-//    font-size: $sp_header3_font_size;
-//    line-height: $sp_header3_line_height;
-//
-//    @media (min-width: $sp_bp) {
-//        font-size: $tb_header3_font_size;
-//        line-height: $tb_header3_line_height;
-//    }
-//    @media (min-width: $tb_bp) {
-//        font-size: $dt_header3_font_size;
-//        line-height: $dt_header3_line_height;
-//    }
-//}
+h3 {
+    font-size: $dt_header2_font_size;
+    line-height: $dt_header2_line_height;
+
+    //@media (min-width: $sp_bp) {
+    //    font-size: $tb_header3_font_size;
+    //    line-height: $tb_header3_line_height;
+    //}
+    //@media (min-width: $tb_bp) {
+    //    font-size: $dt_header3_font_size;
+    //    line-height: $dt_header3_line_height;
+    //}
+}
 //
 //h4 {
 //    font-size: $sp_header4_font_size;

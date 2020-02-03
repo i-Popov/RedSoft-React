@@ -1,0 +1,49 @@
+@import '../../static/assets/styles/_resources.scss';
+
+.ptcontent {
+    background: linear-gradient(180deg, rgba(14, 114, 183, 0.04), rgba(40, 43, 100, 0.04));
+    border-radius: 50% 50% 0 0 / 85px 85px 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text_color2;
+    margin: 0 auto;
+
+    &__wrapper {
+        max-width: 1200px;
+        text-align: center;
+        padding: 120px 0 64px;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 25px 0;
+    }
+
+    &__item {
+        max-width: 256px;
+        width: 100%;
+        margin: 0 72px;
+        position: relative;
+        padding-bottom: 62px;
+
+        &::before {
+            content: '';
+            width: 80px;
+            height: 80px;
+            border: 1px solid #16AFE0;
+            position: absolute;
+            border-radius: 50px;
+            top: -5px;
+            left: 86px;
+        }
+
+        &_img {
+            padding: 20px;
+        }
+    }
+}
