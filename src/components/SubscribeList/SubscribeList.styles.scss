@@ -13,7 +13,7 @@
     &__wrapper {
         //display: flex;
         max-width: 1200px;
-        padding: 110px 20px 200px;
+        padding: 110px 20px 152px;
         position: relative;
         text-align: center;
 
@@ -30,9 +30,18 @@
     }
 
     &__input {
-        padding: 20px 95px;
+        padding: 10px 20px;
         border-radius: 50px;
-        margin-right: 50px;
+        margin-right: 45px;
+        outline: none;
+        border: 1px solid #4f699b;
+        background-color: inherit;
+        width: 360px;
+        height: 60px;
+
+        &::placeholder {
+            color: #a8b2bf;
+        }
     }
 
     &__button {

@@ -8,11 +8,10 @@ const SubscribeList = () => (
             <h2>Получите бесплатный доступ к «Дневнику здоровья»</h2>
             <h3>Оставьте свою электронную почту <br/>
             и вы узнаете о запуске данного сервиса первым!</h3>
-            <div className={styles.sublist__form}>
-                <input className={styles.sublist__input} type="text"/>
+            <form className={styles.sublist__form}>
+                <input className={styles.sublist__input} type="email" placeholder="Ваш E-mail"/>
                 <button className={styles.sublist__button}>Отправить</button>
-            </div>
-
+            </form>
         </div>
     </section>
 );

@@ -3,7 +3,7 @@ import styles from './Header.styles.scss';
 
 const Header = () => (
     <header className={styles.header}>
-        <div className={styles.header__container}>
+        <div className={styles.header__wrapper}>
             <a href="/#" className={styles.header__logo} title="logo"> </a>
             <nav className={styles.header__menu}>
                 <ul className={styles.header__menu_list}>
