@@ -5,8 +5,8 @@ import {Mobile, Lines, Pulse} from "../../static/images";
 const FeaturedContent = () => (
     <section className={styles.ftcontent}>
         <div className={styles.ftcontent__wrapper}>
-            <div>
-                <img src={Lines} alt="" className={styles.ftcontent__lines}/>
+            <div className={styles.ftcontent__lines}>
+                <img src={Lines} alt=""/>
             </div>
             <div className={styles.ftcontent__phone}>
                 <img src={Mobile} alt=""/>

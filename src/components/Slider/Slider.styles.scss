@@ -2,12 +2,90 @@
 
 .slider {
     border-radius: 0 0 50% 50% / 0 0 85px 85px;
-    background-color: $main_color2;
-    //max-width: 1160px;
+    background-image: linear-gradient(to top, rgba(40,43,100, 0.85) -50%, rgba(14,114,183, 0.85)), url("../../static/images/family.png");
     margin: 0 auto;
     width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 750px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+
+    &__lines {
+        position: absolute;
+        top: -235px;
+        left: -387px;
+        z-index: 0;
+    }
+
+    &__wrapper  {
+        width: 100%;
+        text-align: center;
+        padding: 150px 0 0;
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        div {
+            outline: none;
+        }
+
+        .slick-slider {
+            display: flex;
+            justify-content: center;
+        }
+
+        .slick-dots {
+            bottom: -140px;
+            width: 72px;
+            border: 1px solid #5489c3;
+            height: 16px;
+            border-radius: 30px;
+
+            li {
+                margin: 0 2px;
+
+                button {
+                    height: 24px;
+
+                    &::before {
+                        content: '';
+                        width: 17px;
+                        height: 1.5px;
+                        background-color: $text_color;
+                    }
+                }
+            }
+        }
+    }
+
+    &__title {
+        color: $text_color;
+        margin-bottom: 35px;
+    }
+
+    &__subtitle {
+        color: $text_color;
+    }
+
+    &__button {
+        background-color: $button_color;
+        padding: 20px 32px;
+        border-radius: 50px;
+        outline: none;
+        border: transparent;
+        color: #fdfffc;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 25px 0;
+        z-index: 1;
+        transition: 0.2s;
+
+        &:hover {
+            box-shadow: 0 0 6px 0 #00000040;
+        }
+    }
+
+
 }

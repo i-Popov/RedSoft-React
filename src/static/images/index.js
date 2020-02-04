@@ -12,3 +12,6 @@ export const Conversation = require('./functions/6-conversation.png');
 export const Phones = require('./phones.png');
 
 export const Info = require('./info.png');
+
+
+export const SliderLines = require('./slider-lines.svg');
