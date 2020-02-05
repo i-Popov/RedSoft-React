@@ -9,8 +9,8 @@ const SubscribeList = () => (
             <h3>Оставьте свою электронную почту <br/>
             и вы узнаете о запуске данного сервиса первым!</h3>
             <form className={styles.sublist__form}>
-                <input className={styles.sublist__input} type="email" placeholder="Ваш E-mail"/>
-                <button className={styles.sublist__button}>Отправить</button>
+                <input className={styles.sublist__input} type="email" required placeholder={"Ваш E-mail"}/>
+                <button className={styles.sublist__button} type="submit">Отправить</button>
             </form>
         </div>
     </section>

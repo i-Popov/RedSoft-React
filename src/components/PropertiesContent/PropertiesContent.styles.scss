@@ -1,14 +1,24 @@
 @import '../../static/assets/styles/_resources.scss';
 
 .ptcontent {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(-50%, rgba(14, 114, 183, 0.04)), to(rgba(40, 43, 100, 0.04)));
+    background: -o-linear-gradient(top, rgba(14, 114, 183, 0.04) -50%, rgba(40, 43, 100, 0.04));
     background: linear-gradient(180deg, rgba(14, 114, 183, 0.04) -50%, rgba(40, 43, 100, 0.04));
-    //border-radius: 50% 50% 0 0 / 85px 85px 0 0;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     color: $text_color2;
     margin: -20px auto 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 
     &::before {
@@ -32,9 +42,17 @@
     }
 
     &__items {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         padding: 25px 0;
     }

@@ -15,3 +15,5 @@ export const Info = require('./info.png');
 
 
 export const SliderLines = require('./slider-lines.svg');
+
+export const LinesD = require('./lines-d.png');

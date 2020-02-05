@@ -27,9 +27,10 @@ const Footer = () => (
                 </nav>
             </div>
             <div className={styles.footer__copyright}>
-                <span>Разработка сайта <a href="https://redsoft.ru/" target="_blank" rel="noopener noreferrer">Redsoft</a></span>
+                <span>
+                    Разработка сайта <a href="https://redsoft.ru/" target="_blank" rel="noopener noreferrer">Redsoft</a>
+                </span>
             </div>
-
         </div>
     </footer>
 );

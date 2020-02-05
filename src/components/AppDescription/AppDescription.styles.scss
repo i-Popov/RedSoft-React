@@ -4,9 +4,12 @@
     background-color: $main_color;
     margin: 0 auto;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
-    align-items: center;
     overflow: hidden;
     color: $text_color2;
     position: relative;
@@ -14,7 +17,7 @@
     &__wrapper {
         max-width: 1200px;
         width: 100%;
-
+        position: relative;
         padding: 120px 0 147px;
 
         h2 {
@@ -25,10 +28,14 @@
     }
 
     &__items {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
     &__item {
+        z-index: 1;
+
         &:first-child {
             width: 57%;
         }
@@ -43,6 +50,8 @@
     }
 
     &__about {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         padding-bottom: 38px;
 
@@ -84,5 +93,12 @@
                 margin-top: 10px;
             }
         }
+    }
+
+    &__linesd {
+        position: absolute;
+        top: -350px;
+        left: -350px;
+        z-index: 0;
     }
 }

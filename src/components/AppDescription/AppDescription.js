@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './AppDescription.styles.scss';
-import {Phones} from "../../static/images";
+import {Phones, LinesD} from "../../static/images";
 
 const AppDescription = () => (
     <section className={styles.appdesc}>
@@ -48,6 +48,9 @@ const AppDescription = () => (
                 <div className={styles.appdesc__item}>
                     <img src={Phones} alt=""/>
                 </div>
+            </div>
+            <div className={styles.appdesc__linesd}>
+                <img src={LinesD} alt=""/>
             </div>
 
         </div>
